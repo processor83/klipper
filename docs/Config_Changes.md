@@ -8,6 +8,14 @@ All dates in this document are approximate.
 
 ## Changes
 
+20240126: The `max_accel_to_decel` parameter in the `[printer]` config
+section has been deprecated. The `ACCEL_TO_DECEL` parameter of the
+`SET_VELOCITY_LIMIT` command has been deprecated. The
+`printer.toolhead.max_accel_to_decel` status has been removed. Use the
+[minimum_cruise_ratio parameter](./Config_Reference.md#printer)
+instead. The deprecated features will be removed in the near future,
+and using them in the interim may result in subtly different behavior.
+
 20231207: Several undocumented config parameters in the `[printer]`
 config section have been removed (the buffer_time_low,
 buffer_time_high, buffer_time_start, and move_flush_time parameters).
